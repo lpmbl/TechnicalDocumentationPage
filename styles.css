@@ -2,26 +2,90 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #e6e6e6;
+    background-color: white;
     color: black;
 }
 
-.nav-bar{
+.nav-ul{
     clear: both;
-    height: 75px;
     position: fixed;
     z-index: 5;
+    float: left;
+    width: 20%;
+    min-width: 290px;
+    height:100%;
+    border-right: solid;
+    border-color:rgba(0,22,22,0.4);
+    
 }
 
-.nav-ul{
-    float: right;
+@media only screen and (max-width: 815px) {
+    .nav-ul {
+        position:absolute;
+        top:0;
+        padding:0;
+        margin: 0;
+        width:100%;
+        max-height: 300px;
+        overflow: scroll;
+        border-bottom: solid;
+
+    }
+    
+}
+
+.nav-ul li{
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-bottom: 1px solid #555;
+    text-align: left;
+
 }
 
 .nav-ul a{
-    display: inline;
+    margin-left: 2em;
     list-style-type: none;
-    padding-right: 20px;
-    line-height: 75px;
-    height: 75px;
     text-decoration: none;
+
+}
+.nav-ul h1{
+    margin-left: 1em;
+
+}
+
+.description{
+    width: 80%;
+    
+}
+
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.column.side {
+    width: 25%;
+    min-width: 290px;
+}
+
+.column.middle {
+    padding-left: 5%;
+    padding-top: 2%;
+    width: 75%;
+    line-height: 1.6;
+}
+
+code{
+    display:block;
+    text-align: left;
+    white-space: pre;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color:#f7f7f7;
+    padding:15px;
+    margin:10px;
+    border-radius:5px;
 }
